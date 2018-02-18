@@ -107,12 +107,6 @@
 
 	<div class="contact-form">
 		<form action="https://formspree.io/kotikaleksei@icloud.com" method="POST" class="form-group">
-				<!-- TYPEHIDDEN -->
-				<input type="hidden" name="_next" value="//site.io/thanks.html" />
-				<input type="hidden" name="_subject" value="New submission!" />
-				<input type="hidden" name="_language" value="en" />
-				<input type="hidden" name="_language" value="ru" />
-				<!-- TYPEHIDDEN -->
 			<div class="col-sm-offset-3 col-sm-3">
 				<input type="text" name="Имя" placeholder="Your Name">
 				<input type="text" name="_replyto" placeholder="Email*" required>
@@ -124,6 +118,9 @@
 			<div class="col-sm-offset-5 col-sm-2">
 				<button type="submit" class="button">submit</button>
 			</div>
+				<input type="hidden" name="_next" value="//site.io/thanks.html" />
+				<input type="hidden" name="_subject" value="New submission!" />
+				<input type="text" name="_gotcha" style="display:none" />
 		</form>
 	</div>
 
