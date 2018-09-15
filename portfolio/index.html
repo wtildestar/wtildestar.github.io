@@ -12,27 +12,39 @@
 
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700|Shadows+Into+Light+Two" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/vendors/easings.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/vendors/scrolloverflow.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.js"></script>
-
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 
 </head>
 
 <body>
 
+
+
+
+<div id="multiscroll">
+	<div class="ms-left">
+		  <div class="ms-section">
 	<section class="main-header" style="background-image: url(img/3463466.png)">
 
-		<div class="container">
+		<div class="container" id="canvas">
 			<div class="header-composition grid">
 				<div class="header-top grid">
-					<h1><span>wtildestar</span></h1>
+					<a class="glitch-btn-logo" href="https://wtildestar.github.io/portfolio/">
+						<div class="label">wtildestar</div>
+						<div class="mask"><span>wtildestar</span></div>
+						<div class="mask"><span>wtildestar</span></div>
+						<div class="mask"><span>wtildestar</span></div>
+						<div class="mask"><span>wtildestar</span></div>
+						<div class="mask"><span>wtildestar</span></div></a>
+
 				</div>
+
 				<div class="social-top grid">
 					<a href="https://vk.com/id134214745" target="_blank"><i class="fa fa-vk"></i></a>
 					<a href="https://github.com/wtildestar" target="_blank"><i class="fa fa-github-alt"></i></a>
@@ -41,22 +53,29 @@
 			</div>
 		</div>
 
+
 		<div class="header-content text-center">
 			<img src="img/avatar-pic.png" alt="#">
-			<p>Hi there, you are on my online-portfolio, maybe it will be replenished with various works related to web programming, you can also contact me through social networks or using the feedback form that is below.</p>
-			<div class="header-buttons">
-				<a href="#seefullportfolio" class="button2">see portfolio</a>
-				<a href="#getintouch" class="button">hire me</a>
-			</div>
+			<p class="">Hi there, you are on my online-portfolio, maybe it will be replenished with various works related to web programming, you can also contact me through social networks or using the feedback form that is below.</p>
+				<div class="header-buttons">
+					<a href="#seefullportfolio" class="button2">see portfolio</a>
+					<a href="#getintouch" class="button">hire me</a>
+				</div>
+			<div class="glitch-wrap"><a href="#somefacts"><div class="glitch" data-text="&nbsp;&nbsp;&nbsp;&nbsp;UP&nbsp;&nbsp;&nbsp;&nbsp;">DOWN</div></div></a>
 		</div>
 
+
 	</section>
-	
+	</div>
+	</div>
+	<div class="ms-right">
+		<div class="ms-section">
+
 <section class="some-facts landing-section">
 
 	<div class="container">
 		<div class="some-header">
-			<h2>some facts</h2>
+			<a name="somefacts"><h2 >some facts</h2></a>
 			<hr class="style14">
 		</div>
 
@@ -73,7 +92,7 @@
 
 	</div>
 </section>
-
+</div>
 <section class="portfolio landing-section">
 
 	<div class="container">
@@ -138,7 +157,7 @@
 	</div>
 
 </section>
-
+</div>
 
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
