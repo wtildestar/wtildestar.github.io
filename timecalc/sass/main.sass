@@ -1,0 +1,114 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+
+	&:before, &:after
+		box-sizing: border-box
+
+a
+	cursor: pointer
+	color: #FFF
+
+li 
+	list-style: none
+
+html, body
+	height: 100%
+	cursor: default
+
+body
+	font-size: 62.5%!important
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+
+.main
+	position: absolute
+	display: grid
+	height: 100vw
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	background-color: #E5E5E5
+	overflow: hidden
+	hr
+		right: 0
+		position: absolute
+		height: 1.1em
+		top: 43%
+		left: 22.1%
+		background-color: #FF4646
+		z-index: 1
+
+.board
+	background-color: #FFF
+	width: 71%
+	height: 90vw
+	margin: 9em 0
+	justify-self: center
+	align-self: stretch
+	position: relative
+	padding: 5em 5.2em 5em 9.3em
+	.board__text
+		font-size: 6.3em
+		width: 44vw
+		line-height: 1em
+		font-weight: 700
+		span
+			color: #FF4646
+
+
+.language
+	background-color: #FF4646
+	color: #FFF
+	font-size: 1.58em
+	position: absolute
+	right: 0
+	top: 0
+	padding: .64em .76em
+	span
+		color: #FFF
+
+.rept
+	display: grid
+	grid-template-columns: 1fr 1fr
+	margin-top: 8.4em
+
+.rept__left p
+	font-size: 2.12em
+	margin-bottom: 1.6em
+
+.rept__right
+	margin-left: 75%
+
+.rept__right p
+	font-size: 2.12em
+	color: #FF4651
+
+.rept__left--b p
+	font-size: 2.12em
+	margin-bottom: 1.6em
+	font-weight: 700
+
+.copyright
+	color: rgba(0, 0, 0, 0.3)
+	font-size: 1.3em
+	position: absolute
+	bottom: 5em
+	span
+		border-bottom: 1px  rgba(0, 0, 0, 0.3) solid
+
+
+
+
+
+@import "media" // Always at the end
