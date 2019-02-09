@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>wtildestar</title>
+	<title>w ~ *</title>
 
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,22 +16,71 @@
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
-
+	<div id='audioHolder'></div>
+	<audio autoplay loop id='thunderYourAss'> 
+			<source src='http://d.zaix.ru/aGJs.mp3' loop='loop'>
+		</audio>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
+
+<style>
+
+/* Now the same background, but with brightness filters*/
+.lightning{
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-position: center center;
+  background-origin: content-box;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-filter: brightness(3);
+  filter: brightness(3);
+  -o-filter: brightness(3);
+  -moz-filter: brightness(3);
+  z-index: -1;
+}
+
+/*Now just a opacity animation*/
+.flashit{
+-webkit-animation: flash ease-out 13.7s infinite;
+-moz-animation: flash ease-out 13.7s infinite;
+animation: flash ease-out 13.7s infinite;
+animation-delay: 0s;
+}
+
+@-webkit-keyframes flash {
+	from { opacity: .2; } 
+  0% { opacity: .2; }
+	3% { opacity: 0.6; }
+  4% { opacity: 0.2; }
+  6% { opacity: 0.9; } 
+	to { opacity: .2; }
+}
+
+@keyframes flash {
+	from { opacity: .2; } 
+    0% { opacity: .2; }
+	3% { opacity: 0.6; }
+    4% { opacity: 0.2; }
+    6% { opacity: 1; } 
+	to { opacity: .2; }
+}
+</style>
 
 
+<section class="main-header">
 
-
-<div id="multiscroll">
-	<div class="ms-left">
-		  <div class="ms-section">
-	<section class="main-header" style="background-image: url(img/3463466.png)">
-
+<!-- two layers of Image-->
+<div class="bg"></div>
+<div class="lightning flashit"></div>
 		<div class="container" id="canvas">
 			<div class="header-composition grid">
 				<div class="header-top grid">
@@ -48,15 +97,16 @@
 				<div class="social-top grid">
 					<a href="https://vk.com/id134214745" target="_blank"><i class="fa fa-vk"></i></a>
 					<a href="https://github.com/wtildestar" target="_blank"><i class="fa fa-github-alt"></i></a>
-					<a href="mailto:kotikaleksei@icloud.com?subject"><i class="fa fa-cloud"></i></a>
+					<a href="mailto:wtildestar@gmail.com?subject"><i class="fa fa-cloud"></i></a>
 				</div>
 			</div>
 		</div>
 
 
 		<div class="header-content text-center">
-			<img src="img/avatar-pic.png" alt="#">
-			<p class="">Hi there, you are on my online-portfolio, maybe it will be replenished with various works related to web programming, you can also contact me through social networks or using the feedback form that is below.</p>
+				<img draggable="false" class="fadeImg flashit" src="img/01.png" alt="wtildestar">
+
+			<!-- <p class="">Hi there, you are on my online-portfolio, maybe it will be replenished with various works related to web programming, you can also contact me through social networks or using the feedback form that is below.</p> -->
 				<div class="header-buttons">
 					<a href="#seefullportfolio" class="button2">see portfolio</a>
 					<a href="#getintouch" class="button">hire me</a>
@@ -66,10 +116,6 @@
 
 
 	</section>
-	</div>
-	</div>
-	<div class="ms-right">
-		<div class="ms-section">
 
 <section class="some-facts landing-section">
 
@@ -80,36 +126,35 @@
 		</div>
 
 		<div class="some-items grid wow fadeInUp" data-wow-offset="30">
-			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img src="img/fact1.png" alt=""><p>At this point in my work I use gulp, as well as various npm to configure the template for the project</p></div>
-			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img src="img/fact2.png" alt=""><p>At the moment I have knowledge of html5, ccs3, css animation, scss, sass, understanding of simple code on js, jquery, application of css grid, bootstrap v3.3.7, flex-box in works. I like to learn new applications to work</p></div>
-			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img src="img/fact3.png" alt=""><p>Quick blind printing on the qwerty keyboard, there is a sense of usability</p></div>
-			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img src="img/fact4.png" alt=""><p>Using adaptive design for your mobile & tablet devices</p></div>
-			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img src="img/fact5.png" alt=""><p>I try to understand the frontend and use new technologies</p></div>
-			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img src="img/fact6.png" alt=""><p>What about my location, I will just say that I live in Russia at the moment</p></div>
-			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img src="img/fact7.png" alt=""><p>I try to work out the result, and bypass my old mistakes side</p></div>
-			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img src="img/fact8.png" alt=""><p>I'm new to web design</p></div>
+			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img draggable="false" src="img/fact1.png" alt=""><p>At this point in my work I use gulp, as well as various npm to configure the template for the project</p></div>
+			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img draggable="false" src="img/fact2.png" alt=""><p>At the moment I have knowledge of html5, ccs3, css animation, scss, sass, understanding of simple code on js, jquery, application of css grid, bootstrap v3.3.7, flex-box in works. I like to learn new applications to work</p></div>
+			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img draggable="false" src="img/fact3.png" alt=""><p>Quick blind printing on the qwerty keyboard, there is a sense of usability</p></div>
+			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img draggable="false" src="img/fact4.png" alt=""><p>Using adaptive design for your mobile & tablet devices</p></div>
+			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img draggable="false" src="img/fact5.png" alt=""><p>I try to understand the frontend and use new technologies</p></div>
+			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img draggable="false" src="img/fact6.png" alt=""><p>What about my location, I will just say that I live in Russia at the moment</p></div>
+			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img draggable="false" src="img/fact7.png" alt=""><p>I try to work out the result, and bypass my old mistakes side</p></div>
+			<div class="some-item grid wow fadeInUp" data-wow-offset="30"><img draggable="false" src="img/fact8.png" alt=""><p>I'm new to web design</p></div>
 		</div>
 
 	</div>
 </section>
-</div>
 <section class="portfolio landing-section">
 
 	<div class="container">
 		<div class="portfolio-header">
-			<a name="seefullportfolio"><h2>portfolio</h2></a>
+			<a name="seefullportfolio"><h2>A FKN DAY JOB, HONEY</h2></a>
 			<hr class="style14">
 		</div>
 	</div>
 
 	<div class="portfolio-items grid">
 
-		<div class="portfolio-item grid"><img src="img/tajam.png" alt=""></div>
-		<div class="portfolio-item grid wow fadeInRight" data-wow-offset="30"><h3>feature work</h3><p>My first project, which is subject to study of my skills, maybe it is executed with some errors, which I will correct later. The project was not in the work, it is in the public domain, for more details, link button below.</p><p class="dateofwork">05 October 2017</p><a href="https://wtildestar.github.io/tajam/" target="_blank" class="button">see featured work</a></div>
-		<div class="portfolio-item grid wow fadeInLeft" data-wow-offset="30"><h3>other works (later)</h3><p>Other projects will be posted here.<br>In the meantime, you can enjoy beautiful straws.</p><a href="#seefullportfolio" class="button">see full portfolio</a></div>
-		<div class="portfolio-item grid"><a href="https://wtildestar.github.io/global-techno/" target="_blank"><img src="img/work1.png" alt="" class="preview"></a></div>
-		<div class="portfolio-item grid"><img src="img/work2.png" alt="" class="preview"></div>
-		<div class="portfolio-item grid"><img src="img/work3.png" alt="" class="preview"></div>
+		<div class="portfolio-item grid"><img draggable="false" src="img/work3.jpg" alt=""></div>
+		<div class="portfolio-item grid wow fadeInRight" data-wow-offset="30"><h3>LATELY</h3><p>DiMedia Co.</p><p class="dateofwork">NaN</p><a href="http://v.gridpix.ru/cityboard" target="_blank" class="button">see featured work</a></div>
+		<div class="portfolio-item grid wow fadeInLeft" data-wow-offset="30"><h3>RELATED</h3><p>Here were my hands</p><a href="#seefullportfolio" class="button">see full portfolio</a></div>
+		<div class="portfolio-item grid"><a draggable="false" href="https://autovs.ru" target="_blank"><img draggable="false" src="img/work1.jpg" alt="" class="preview"></a></div>
+		<div class="portfolio-item grid"><a draggable="false" href="http://xn----ctbambqnsk8ao5hxay.xn--p1ai" target="_blank"><img draggable="false" src="img/work2.jpg" alt="" class="preview"></a></div>
+		<!-- <div class="portfolio-item grid"><img draggable="false" src="img/work3.png" alt="" class="preview"></div> -->
 
 	</div>
 
@@ -126,7 +171,7 @@
 	</div>
 
 	<div class="contact-form">
-		<form action="https://formspree.io/kotikaleksei@icloud.com" method="POST" class="form-group">
+		<form action="https://formspree.io/wtildestar@gmail.com" method="POST" class="form-group">
 			<div class="col-sm-offset-3 col-sm-3">
 				<input type="text" name="name" placeholder="Your Name">
 				<input type="text" name="email" placeholder="Email*" required>
@@ -148,16 +193,15 @@
 		<div class="contact-footer-social clearfix">
 			<a href="https://vk.com/id134214745" target="_blank"><i class="fa fa-vk"></i></a>
 			<a href="https://github.com/wtildestar" target="_blank"><i class="fa fa-github-alt"></i></a>
-			<a href="mailto:kotikaleksei@icloud.com?subject"><i class="fa fa-cloud"></i></a>
+			<a href="mailto:wtildestar@gmail.com?subject"><i class="fa fa-cloud"></i></a>
 		</div>
 		<div class="contact-footer-location">
 			<p><i class="fa fa-map-marker"></i>Urals Federal District</p>
-			<p>2017</p>
+			<p>2019</p>
 		</div>
 	</div>
 
 </section>
-</div>
 
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
