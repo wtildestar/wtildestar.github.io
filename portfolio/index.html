@@ -19,14 +19,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
-	<div id='audioHolder'></div>
-	<audio autoplay loop id='thunderYourAss'> 
-			<source src='https://vocaroo.com/i/s1AYmfCI56Op' loop='loop'>
-	</audio>
+
 </head>
 
 <body oncontextmenu="return false">
-
+	<div id='audioHolder'></div>
+	<audio autoplay loop id='thunderYourAss'> 
+			<!-- <source src='https://vocaroo.com/i/s1AYmfCI56Op' loop='loop'> -->
+				<source src='./audio/clap.mp3' loop='loop'>
+	</audio>
 <style>
 .lightning{
   position: absolute;
@@ -45,10 +46,10 @@
 }
 
 .flashit{
--webkit-animation: flash ease-out 12.7s infinite;
--moz-animation: flash ease-out 12.7s infinite;
-animation: flash ease-out 12.7s infinite;
-animation-delay: 2s;
+-webkit-animation: flash ease-out 13.7s infinite;
+-moz-animation: flash ease-out 13.7s infinite;
+animation: flash ease-out 13.7s infinite;
+animation-delay: 0s;
 }
 
 @-webkit-keyframes flash {
